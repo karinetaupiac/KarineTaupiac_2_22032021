@@ -11,11 +11,11 @@
 }
 
 }
-.topbar-logo {
+.topbar {
     display: flex;
-    padding: 11px 0;
+    padding: 20px;
     max-width: 1050px;
-    margin: 0 auto;
+    margin: 20px ;
 }
 a {
     color: #0065fc;
@@ -24,12 +24,15 @@ a {
 }
 .topbar-nav {
     display: flex;
-    margin: 24px;
+    margin: 0;
+    padding: 20px;
     font-size: small;
     justify-content: flex-end ;
     }
-    .topbar-nav a {
-        align-content: space-around;
+
+.topbar-nav a {
+    align-content: space-between;
+        
     }
 body {
     font-family: raleway, sans-serif;
@@ -64,6 +67,7 @@ footer {
     margin: auto;
     padding: 0 2rem;
     box-sizing: border-box;
+    list-style-type: none;
 }
 a:hover {
     text-decoration: underline;
