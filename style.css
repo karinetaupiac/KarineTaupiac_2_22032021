@@ -6,17 +6,10 @@
     .topbar {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
         padding: 0 50px;
-        flex-direction: column;
     }      
 }
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-header {
-    display: flex;
-}
+
 }
 .topbar-logo {
     display: flex;
@@ -24,55 +17,25 @@ header {
     max-width: 1050px;
     margin: 0 auto;
 }
-.topbar-nav {
-    float: right;
-    justify-content: flex-end;
-}
 a {
     color: #0065fc;
     font-weight: bolder;
-}
-.topbar-nav a.active {
-    color: #0065fc;
-    font-weight: bolder;
-}
-.topbar a {
     text-decoration: none;
 }
-.topbar-nav a {
+.topbar-nav {
     display: flex;
     margin: 24px;
     font-size: small;
-    transition-duration: 0.1s;
-}
-.navhebergement {
-    color: #0065fc;
-    font-weight: bold;
-    border-top: solid;
-    padding-top: 20px;
-}
-.navactivities {
-    color: black;
-}
-a:hover {
-    border-top: 3px solid #0065fc;
-    padding-top: 20px;
-    transition-duration: 0.1s;
-}
-.active {
-    color: black;
-}
-.signup {
-    display: flex;
-    margin: 24px;
-    color: #0065fc;
-    font-weight: bolder;
-    border-top: none;
-    border-top: transparent solid;
-}
+    justify-content: flex-end ;
+    }
+    .topbar-nav a {
+        align-content: space-around;
+    }
 body {
     font-family: raleway, sans-serif;
-    line-height: 1.3;
+    padding: 0 20px;
+    max-width: 1050px;
+    margin: 0 auto;
 }
 .container {
     padding: 0 20px;
@@ -86,4 +49,14 @@ body {
     color: white;
     border-radius: 10px;
     display: inline-block;
+}
+footer {
+    display: flex;;
+    flex-direction: row;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+    line-height: 2;
+}
+h3 {
+    text-decoration: none;
 }
