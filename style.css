@@ -1,77 +1,71 @@
-.navbar {
-    display: flex;
+
 }
 @media screen and (min-width: 100px) and 
 (max-width: 1500px) {
     .topbar {
         display: flex;
-        justify-content: space-between;
-        padding: 0 50px;
+        justify-content: flex-end;
     }      
 }
-
 }
-.topbar {
-    display: flex;
-    padding: 20px;
-    max-width: 1050px;
-    margin: 20px ;
+#nav {
+padding: 0; margin: 0;
+text-align: right;
+text-decoration: none;
+vertical-align: top;
 }
-a {
-    color: #0065fc;
-    font-weight: bolder;
+#nav li {
+	display: inline;
+	list-style: none;
+    padding: 0; margin: 0;
+	text-align: right;
     text-decoration: none;
 }
-.topbar-nav {
-    display: flex;
-    margin: 0;
-    padding: 20px;
-    font-size: small;
-    justify-content: flex-end ;
-    }
-
-.topbar-nav a {
-    align-content: space-between;
-        
-    }
+#nav a {
+	display:inline-block;
+	margin: 0 30px;
+}
 body {
     font-family: raleway, sans-serif;
     padding: 0 20px;
     max-width: 1050px;
     margin: 0 auto;
 }
-.container {
-    padding: 0 20px;
-    max-width: 1050px;
-    margin: 0 auto;
-}
-.search {
-    border: 0;
-    text-align: center;
-    background-color: #0065fc;
-    color: white;
-    border-radius: 10px;
-    display: inline-block;
-}
 footer {
     display: flex;;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #f2f2f2;
     flex-wrap: wrap;
     line-height: 2;
+    
+    
 }
 .footercolumn {
-    color: black;
+    color: rgb(2, 1, 1);
     display: flex;
     max-width: 100%;
     margin: auto;
     padding: 0 2rem;
     box-sizing: border-box;
     list-style-type: none;
-}
-a:hover {
-    text-decoration: underline;
+    justify-content: space-between;
 }
 h3 {
     text-decoration: none;;
 }
+input {
+    border: 2px solid black;
+    padding: 3px;
+  }
+  
+  :placeholder-shown {
+    border-color: silver;
+  }
+  .styled {
+    border: 0;
+    line-height: 1.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #0065fc;
+    color: white;}
