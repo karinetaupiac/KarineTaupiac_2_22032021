@@ -1,4 +1,7 @@
 
+.header {
+    padding: 60px;
+}
 .left_menu {
     float: left;
 }
@@ -11,8 +14,8 @@
     font-size: 900;
     padding: 30px;
     margin: 10px;
-    border-bottom: 4px solid #0065fc;
-    padding-bottom: 20px;
+    border-top: 4px solid #0065fc;
+    padding-top: 20px;
 }
 .signup_link {
     text-decoration: none;
@@ -27,9 +30,9 @@
     padding: 50px;
 }
 .activities_link:hover {
-    padding-bottom: 20px;
+    padding-top: 20px;
     transition: 0.3s ease-in-out;
-    border-bottom: 4px solid #0065fc;
+    border-top: 4px solid #0065fc;
 }
 @media screen and (min-width: 100px) and 
 (max-width: 1500px) {
@@ -45,10 +48,17 @@ body {
     max-width: 1050px;
     margin: 0 auto;
 }
+.title {
+    text-align: left;
+    font-weight: 900;
+    margin-top: 20px;
+
+}
 footer {
     display: flex;;
     flex-direction: column;
     background-color: #f2f2f2;
+    width: 100%;
     flex-wrap: wrap;
     line-height: 2;
     
