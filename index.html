@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <script type="module" src="https://fontawesome.com/"></script>
+    <script src="https://kit.fontawesome.com/5df357d4ef.js" crossorigin="anonymous"></script>
 </head>
 <body> 
 <!--Header-->    
@@ -18,37 +18,54 @@
         <img src="img/logo.png" alt="logo Reservia" height="45px" width="90px">
     </div>
     <div class="right_menu">
-        <a href="#"class="hebergement_link">Hébergements</a>
-        <a href="#"class="activities_link">Activités</a>
+        <a href="#hosting"class="hebergement_link">Hébergements</a>
+        <a href="#activities"class="activities_link">Activités</a>
         <a href="#"class="signup_link" >S'inscrire</a>
     </div>
     </nav> 
 </header>
 <!--Titre--> 
 <section role="first_title">
-    <div class="title1">
-        <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ou en pleine nature</p>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
     </div>
 </section>
 <!--section 1-->
+<div class="input">
+<div id="input_with_icon" class="icon">
+    <button type="image" class="image"><i class="fas fa-map-marker-alt"></i>
+</div> 
 <input placeholder="Marseille, France"> 
-    <input class="favorite styled"
-     type="button"
-     value="Recherche">  
+    <input class="favorite_styled" type="button" value="Rechercher">  
+</div>    
 <!--Filtres--> 
-<h2>Filtres</h2>>
-<i class="fas fa-money-bill-wave">Économique</i>
-<i class="fas fa-heart">Romantique</i>
-<i class="fas fa-dog">Animaux autorisés</i>
+<h2>Filtres</h2>  
+    <div class="Filters">
+        <div class="Filters-categories">
+            <i class="fas fa-money-bill-wave Filters-icons"></i>
+            <a href="#" class="details">Économique</a>
+        </div>
+        <div class="Filters-categories">
+            <i class="fas fa-child Filters-icons"></i>
+            <a href="#" class="details">Familial</a>
+        </div>
+        <div class="Filters-categories">
+            <i class="fas fa-heart Filters-icons"></i>
+            <a href="#" class="details">Romantique</a>
+        </div>
+        <div class="Filters-categories">
+            <i class="fas fa-dog Filters-icons"></i>
+            <a href="#" class="details">Animaux autorisés</a>
+        </div>
+    </div>    
 
 <!--info-->
 <p>Plus de 500 logements sont disponibles dans cette ville</p>
 
-<!--Hébergement--> <p>
+<!--Hébergement-->
             
-<div id="hebergement"></div>
-<div id="activities"
+<div id="hosting">Hébergements</div>
+<div id="activities">Activités</div>
 <!--aside-->
 <!--whatelse-->
 </body>
