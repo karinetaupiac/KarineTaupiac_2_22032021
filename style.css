@@ -276,6 +276,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
+  padding-bottom: 40px;
 }
 h1 {
   margin-left: 15px;
@@ -307,6 +308,12 @@ h1 {
 .text_hebergement {
   margin-top: 2px;
   margin-left: 20px;
+}
+.show_more {
+  padding-top: 30px;
+  margin-left: 20px;
+  font-weight: 800;
+  font-size: larger;
 }
 .star {
   color: #0065fc;
@@ -352,10 +359,6 @@ h1 {
   text-align: left;
   font-size: medium;
 }
-.show_more {
-  padding-top: 200px;
-  margin: 20px;
-}
 .star_hotel {
   margin-top: 0;
 }
@@ -363,7 +366,7 @@ h1 {
 
 /* Les plus populaires */
 #pop {
-  padding: 10px 20px 10px 15px;
+  padding: 10px 20px 40px 15px;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -456,6 +459,8 @@ h4 {
   border-radius: 20px;
   box-shadow: 2px 2px 11px 0 #e0e0e0;
   transition-duration: 0.1s;
+  height: 200px;
+  width: 100%;
 }
 .activities_container {
   padding-left: 15px;
@@ -468,15 +473,21 @@ h4 {
   border-radius: 10px 10px 0 0;
   margin: 0;
   width: 100%;
+  height: 140px;
 }
 .container_grid {
-  display: flex;
   border-radius: 0 10px 10px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  border-color: white;
+  width: 90%;
 }
 .text {
-  font-weight: 600;
+  font-weight: 800;
   margin-left: 20px;
   margin-top: 20px;
+  font-size: large;
 }
 @media screen and (min-width: 769px) {
   .activities_container {
@@ -563,7 +574,7 @@ h4 {
   background-color: #f2f2f2;
 }
 .title_footer {
-  font-weight: bold;
+  font-weight: 800;
   list-style-type: none;
   line-height: 50px;
   text-decoration: none;
@@ -571,7 +582,7 @@ h4 {
 .list_footer {
   list-style-type: none;
   line-height: 30px;
-  width: 200px;
+  width: 250px;
   text-decoration: none;
 }
 .container_footer a {
