@@ -314,10 +314,18 @@ p {
   justify-content: space-evenly;
   width: 100%;
   padding-bottom: 40px;
+  padding-top: 60px;
 }
 h1 {
+  margin: 0;
+  padding-bottom: 20px;
+}
+.cottage_title {
+  display: none
+}
+.hebergements_title {
   margin-left: 15px;
-  padding-top: 15px;
+  padding-top: 50px;
 }
 .hotel {
   margin-left: 10px;
@@ -346,11 +354,13 @@ h1 {
   margin-top: 2px;
   margin-left: 20px;
 }
-#show_more {
+.show_more {
   padding-top: 30px;
   margin-left: 20px;
   font-weight: 800;
   font-size: larger;
+  color: black;
+  text-decoration: none;
 }
 .star {
   color: #0065fc;
@@ -369,8 +379,6 @@ h1 {
     border: solid 3px #deebff;
     border-radius: 20px;
   }
-}
-@media screen and (max-width: 768px) {
   .cottage {
     width: 100%;
   }
@@ -408,7 +416,7 @@ h1 {
 .star_hotel {
   margin-top: 0;
 }
-#show_more {
+.show_more {
   display: inline-block;
   text-align: left;
   padding-top: 50px;
@@ -557,8 +565,9 @@ h4 {
   .activities_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr;
     row-gap: 50px;
+    margin-bottom: 50px;
   }
   .container_grid {
     box-shadow: 2px 2px 11px 0 #e0e0e0;
@@ -629,9 +638,6 @@ h4 {
     object-fit: cover;
   }
 }
-
-
-
 /*footer*/
 .footer {
   display: flex;
@@ -670,7 +676,7 @@ h4 {
   }
   .footer {
     position: absolute;
-    padding-left: 0;
+    margin-left: 0;
     width: 100%;
   }
   .container_footer a {
@@ -690,3 +696,4 @@ h4 {
     line-height: 30px;
   }
 }
+
