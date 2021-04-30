@@ -6,6 +6,13 @@ body {
   font-family: raleway, sans-serif;
   margin: 0;
 }
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 20px;
+  justify-content: space-between;
+}
 .menu {
   display: flex;
   flex-wrap: nowrap;
@@ -33,18 +40,17 @@ body {
 }
 .menu_link:hover {
   color: #0065fc;
-  border-bottom: 4px solid #0065fc;
+  border-bottom: 3px solid #0065fc;
 }
 .menu_link_default {
   color: #0065fc;
-  border-bottom: 4px solid #0065fc;
+  border-bottom: 3px solid #0065fc;
 }
 .signup_link {
   text-decoration: none;
   color: #0065fc;
   font-weight: 700;
   float: right;
-  padding-top: 20px;
   padding-right: 20px;
 }
 .activities_link {
@@ -64,26 +70,25 @@ body {
   }
   .header {
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    padding-top: 0;
   }
   .image_container {
     width: 10%;
   }
   .menu {
-    display: block;
-    padding: 50px 0;
     align-items: flex-end;
-    justify-content: space-between;
     text-align: right;
+    height: 100%;
+    max-width: 300px;
+    margin-left: auto;
   }
   .signup_link {
-    margin-top: 30px;
     text-align: right;
     order: 3;
-  }
-  .image {
-    margin-top: 40px;
+    margin-top: 10px;
+    padding: 2rem;
   }
   .menu_link {
     margin-right: 50px;
@@ -218,7 +223,7 @@ p {
   border: 1px solid #d9d9d9;
   border-radius: 30px;
   height: 50px;
-  width: 200px;
+  padding-right: 16px;
   margin-bottom: 15px;
 }
 .Filters-categories:hover {
@@ -319,6 +324,7 @@ p {
 h1 {
   margin: 0;
   padding-bottom: 20px;
+  padding-left: 10px;
 }
 .cottage_title {
   display: none
@@ -344,10 +350,11 @@ h1 {
 .img {
   object-fit: cover;
   border: 1px solid transparent;
-  margin-left: 10px;
-  margin-top: 10px;
-  border-radius: 10px 10px 0 0;
-  width: 95%;
+  padding-left: 5px;
+  margin-top: 5px;
+  padding-right: 5px;
+  border-radius: 25px 25px 0 0;
+  width: 100%;
   height: 120px;
 }
 .text_hebergement {
@@ -366,48 +373,50 @@ h1 {
   color: #0065fc;
   margin-left: 20px;
   font-size: medium;
+  margin-bottom: 10px;
 }
 .euro {
   font-weight: 800;
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
-  .leshebergements {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    margin: 30px;
-    border: solid 3px #deebff;
-    border-radius: 20px;
-  }
-  .cottage {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 769px) {
 .leshebergements {
-  width: 700px;
-  height: 660px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: 30px;
+}
+.cottage {
+  width: 100%;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1364px) {
+.cottage {
+  display: flex;
+  flex-direction: column;
+}
+.leshebergements {
   margin: 30px ;
   background-color: #f2f2f2;
   border-radius: 20px;
   border-color: #f2f2f2;
   box-sizing: border-box;
-  display: inline-block;
   margin-top: 30px;
   padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: auto;
 }
 .hotel {
-  float: left;
-  width: 30%;
-  text-align: center;
-  font-style: normal;
-  font-size: smaller;
-  text-indent: 0;
+  margin: auto;
+  background-color: white;
+  border-color: white;
   border-radius: 20px;
-  box-shadow: 2px 2px 2px #e0e0e0;
-  transition-duration: 0.2s;
-  cursor: pointer;
-  margin: 0.5em;
+  box-shadow: 2px 2px 11px 0 #e0e0e0;
+  height: 220px; 
+  width: 50%; 
+  margin-top: 20px;
+  align-items: center;
 }
 .hotel_hebergement {
   text-align: left;
@@ -423,12 +432,56 @@ h1 {
   margin-left: 0;
 }
 }
+@media screen and (min-width : 1365px) {
+  .leshebergements {
+    width: auto;
+    height: auto;
+    margin: 30px ;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    border-color: #f2f2f2;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 30px;
+    padding-left: 40px;
+  }
+  .hotel {
+    float: left;
+    width: 30%;
+    text-align: center;
+    font-style: normal;
+    font-size: smaller;
+    text-indent: 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #e0e0e0;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    margin: 0.5em;
+  }
+  .hotel_hebergement {
+    text-align: left;
+    font-size: medium;
+  }
+  .star_hotel {
+    margin-top: 0;
+  }
+  .night {
+    margin-left: 10px;
+    line-height: 5px;
+  }
+  .show_more {
+    display: inline-block;
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 0;
+  }
+}
 /* Les plus populaires */
 #pop {
-  padding: 10px 20px 40px 15px;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
+  width: auto;
 }
 .title_aside {
   display: flex;
@@ -447,8 +500,6 @@ h2 {
   border: solid white;
   box-sizing: border-box;
   margin: 10px;
-  padding: 5px;
-  height: 170px;
 }
 .pop_aside {
   display: flex;
@@ -501,28 +552,44 @@ h4 {
     text-align: justify;
     width: 80%;
     margin-left: 50px;
+    min-height: 150px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1364px) {
   #pop {
+    order: 2;
+    width: 30%;
+    border-radius: 25px;
+    margin: auto;
+    align-items: center;
     display: flex;
+    width: auto;
+  }
+  .hotel_aside {
+  width: 50%; 
+  align-items: center;
+}
+.line {
+  padding-left: 50px;
+}
+.night {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.star_hotel {
+  margin-top: 40px;
+}
+.night_pop {
+  margin-left: 0;
+}
+}  
+@media screen and (min-width: 1365px) {
+  #pop {
     order: 2;
     width: 30%;
     border-radius: 25px;
     margin: 20px;
-    height: 670px;
-  }
-  .night {
-    display: flex;
-    margin-left: 10px
-    ;
-    margin-top: 10px;
-  }
-  .star_hotel {
-    margin-top: 40px;
-  }
-  .night_pop {
-    margin-left: 0;
   }
 }
 /* grid */
@@ -581,6 +648,7 @@ h4 {
   .titre_grid {
     grid-column: 1 / -1;
     margin-left: 20px;
+    margin-top: 20px;
   }
   .img_grid {
     height: 100%;
@@ -646,11 +714,13 @@ h4 {
 .footer {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .container_footer {
   display: flex;
   flex-wrap: wrap;
   background-color: #f2f2f2;
+  width: 100%;
 }
 .title_footer {
   font-weight: 800;
@@ -674,7 +744,6 @@ h4 {
     width: 100%;
     margin: auto;
     padding: 0 2rem;
-    box-sizing: border-box;
     justify-content: space-around;
     background-color: #f2f2f2;
   }
