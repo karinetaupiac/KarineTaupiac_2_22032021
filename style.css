@@ -500,6 +500,7 @@ h2 {
   border: solid white;
   box-sizing: border-box;
   margin: 10px;
+  min-height: 150px;
 }
 .pop_aside {
   display: flex;
@@ -568,6 +569,7 @@ h4 {
   .hotel_aside {
   width: 50%; 
   align-items: center;
+  height: 200px;
 }
 .line {
   padding-left: 50px;
