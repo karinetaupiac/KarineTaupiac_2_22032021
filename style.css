@@ -669,6 +669,8 @@ h4 {
     grid-row: 2 / 4;
     border-radius: 20px;
     object-fit: cover;
+    transition-duration: 0.2s;
+    cursor: pointer;
   }
   .photo2 {
     display: flex;
@@ -677,6 +679,8 @@ h4 {
     grid-row: 2 / 3;
     border-radius: 20px;
     object-fit: cover;
+    transition-duration: 0.2s;
+    cursor: pointer;
   }
   .photo3 {
     display: flex;
@@ -685,6 +689,8 @@ h4 {
     grid-row: 3;
     border-radius: 20px;
     object-fit: cover;
+    transition-duration: 0.2s;
+    cursor: pointer;
   }
   .photo4 {
     display: flex;
@@ -694,6 +700,8 @@ h4 {
     height: 600px;
     object-fit: cover;
     border-radius: 20px;
+    transition-duration: 0.2s;
+    cursor: pointer;
   }
   .photo5 {
     display: flex;
@@ -702,6 +710,8 @@ h4 {
     grid-row: 2 / 3;
     border-radius: 20px;
     object-fit: cover;
+    transition-duration: 0.2s;
+    cursor: pointer;
   }
   .photo6 {
     display: flex;
@@ -710,6 +720,8 @@ h4 {
     grid-row: 3 / 4;
     border-radius: 20px;
     object-fit: cover;
+    transition-duration: 0.2s;
+    cursor: pointer;
   }
 }
 /*footer*/
