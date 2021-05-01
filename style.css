@@ -1,4 +1,4 @@
-/* header*/
+/*header*/
 * {
   box-sizing: border-box;
 }
@@ -93,11 +93,11 @@ header {
   .menu_link {
     margin-right: 50px;
     border-bottom: none;
-    margin-top: 5px;
   }
   .menu_link_default {
     border-bottom: none;
     border-top: 4px solid #0065fc;
+    padding: 40px 20px;
   }
   .menu_link:hover {
     border-bottom: none;
@@ -458,6 +458,9 @@ h1 {
     cursor: pointer;
     margin: 0.5em;
   }
+  .hotel:hover {
+    opacity: 0.3s;
+  }
   .hotel_hebergement {
     text-align: left;
     font-size: medium;
@@ -508,7 +511,6 @@ h2 {
 }
 .img_aside {
   width: 40%;
-  min-width: 40%;
   height: 100%;
   border: 1px solid #deebff;
   border-radius: 20px 0 0 20px;
@@ -546,16 +548,7 @@ h4 {
   margin-top: 40px;
   font-size: medium;
 }
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  #pop {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    width: 80%;
-    margin-left: 50px;
-    min-height: 150px;
-  }
-}
+
 @media screen and (min-width: 769px) and (max-width: 1364px) {
   #pop {
     order: 2;
@@ -671,7 +664,7 @@ h4 {
     object-fit: cover;
     transition-duration: 0.2s;
     cursor: pointer;
-  }
+    }
   .photo2 {
     display: flex;
     align-items: flex-start;
