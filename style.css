@@ -8,6 +8,12 @@ body {
   font-family: raleway, sans-serif;
   margin: 0;
 }
+@media screen and (min-width: 1440px) {
+  body {
+  margin: 50px;
+  margin-top: 0;
+}
+}
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,8 +258,6 @@ p {
   flex-direction: row;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-top: 25px;
   text-align: left;
   flex-wrap: wrap;
@@ -300,17 +304,6 @@ p {
 .details {
   width: auto;
   font-weight: bold;
-}
-@media screen and (max-width: 768px) {
-  .Filters {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 @media screen and (min-width: 769px) {
   .Filters {
@@ -480,6 +473,9 @@ h1 {
 }
 }
 @media screen and (min-width : 769px) {
+  .cottage {
+    margin: 20px;
+  }
   .leshebergements {
     width: auto;
     height: auto;
@@ -490,6 +486,7 @@ h1 {
             box-sizing: border-box;
     display: inline-block;
     margin-top: 30px;
+    margin-bottom: 40px;
     padding-left: 40px;
   }
   .hotel {
@@ -938,15 +935,14 @@ h4 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    margin: auto;
-    padding: 0 2rem;
+    margin: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background-color: #f2f2f2;
   }
   .footer {
     position: absolute;
-    margin-left: 0;
+    margin: 0;
     width: 100%;
   }
   .container_footer a {
